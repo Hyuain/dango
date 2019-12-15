@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fde6d6;
+    min-height      : 100vh;
+}
+
+@keyframes waggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    20%,
+    100% {
+        width        : 4px;
+        height       : 40px;
+        left         : 50%;
+        top          : 15px;
+        border-radius: 2px;
+    }
+
+    10% {
+        width        : 10px;
+        height       : 4px;
+        left         : 48%;
+        top          : 41px;
+        border-radius: 5px;
+    }
+}
+
+.ground {
+    height          : 120px;
+    width           : 500px;
+    position        : relative;
+    top             : 550px;
+    margin-left     : auto;
+    margin-right    : auto;
+    margin-bottom   : 50px;
+    border-radius   : 50%;
+    background-color: #fdc798;
+}
+
+.dango {
+    width        : 195px;
+    height       : 120px;
+    position     : absolute;
+    border-radius: 100px 100px 40px 40px;
+
+}
+
+.dango .eye {
+    background-color: #4e4e4e;
+    width           : 4px;
+    height          : 40px;
+    position        : absolute;
+    left            : 50%;
+    top             : 15px;
+    border-radius   : 2px;
+    transform-origin: 50% 100%;
+}
+
+.dango .eye.left {
+    margin-left: -18px;
+}
+
+.dango .eye.right {
+    margin-left: 14px;
+}
+
+.dango .cheek {
+    background-color: #fc9baf;
+    width           : 26px;
+    height          : 26px;
+    position        : absolute;
+    left            : 50%;
+    top             : 47px;
+    border-radius   : 50%;
+}
+
+.dango .cheek.left {
+    margin-left: -58px;
+}
+
+.dango .cheek.right {
+    margin-left: 32px;
+}
+
+.dango.yellow {
+    border          : 5px solid #fdb148;
+    background-color: #fff0ad;
+    top             : -50px;
+    left            : 80px;
+    animation       : waggle 8s infinite;
+}
+
+.dango.yellow .eye {
+    animation: blink 5s infinite;
+}
+
+.dango.pink {
+    border          : 5px solid #fca4b5;
+    background-color: #fdd2dc;
+    top             : -155px;
+    left            : 85px;
+    animation       : waggle 4s infinite;
+}
+
+.dango.pink .eye {
+    animation: blink 4s infinite;
+}
+
+.dango.blue {
+    border          : 5px solid #82bce0;
+    background-color: #d0f1f3;
+    top             : -265px;
+    left            : 90px;
+    animation       : waggle 3s infinite;
+}
+
+.dango.blue .eye {
+    animation: blink 3.5s infinite;
+}
+
+.dango.green {
+    border          : 5px solid #80c48f;
+    background-color: #bceed0;
+    top             : -370px;
+    left            : 120px;
+    animation       : waggle 4s infinite;
+}
+
+.dango.green .eye {
+    width : 40px;
+    height: 4px;
+    top   : 35px;
+}
+
+.dango.green .eye.left {
+    margin-left: -50px;
+}
+
+.dango.green .eye.right {
+    margin-left: 10px;
+}
+
+.dango.green::after{
+    content: 'ZZZ...';
+    font-family: 'Oswald', sans-serif;
+    color: #fca05e;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+}
+
+.dango.purple {
+    border          : 5px solid #bb9bd3;
+    background-color: #ceb8ef;
+    top             : -475px;
+    left            : 145px;
+    animation       : waggle 3s infinite;
+}
+
+.dango.purple .eye {
+    width : 90px;
+    height: 4px;
+    top   : 35px;
+}
+
+.dango.purple .eye.left {
+    transform: translateX(-22px) rotate(15deg) ;
+}
+
+.dango.purple .eye.right {
+    transform: translateX(-64px) rotate(-15deg) ;
+}
+
+.dango.purple::after{
+    content: '!';
+    font-family: 'Oswald', sans-serif;
+    color: #fca05e;
+    font-size: 54px;
+    font-weight: bold;
+    position: absolute;
+    top: -55px;
+    left: 190px;
+}
+
+/*# sourceMappingURL=style.e93e8d87.css.map */
