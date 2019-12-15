@@ -128,7 +128,7 @@ body {
     background-color: #fdd2dc;
     top             : -155px;
     left            : 85px;
-    animation       : waggle 4s infinite;
+    animation       : waggle 4.5s infinite;
 }
 
 .dango.pink .eye {
@@ -140,7 +140,7 @@ body {
     background-color: #d0f1f3;
     top             : -265px;
     left            : 90px;
-    animation       : waggle 3s infinite;
+    animation       : waggle 3.5s infinite;
 }
 
 .dango.blue .eye {
